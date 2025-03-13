@@ -32,7 +32,7 @@ public class RecruiterProfile {
     @Transient
     public  String getPhotosImagePath(){
         if(profilePhoto == null) return null;
-        return "/photos/recruiter"+userAccountId+"/"+profilePhoto;
+        return "/photos/recruiter/"+userAccountId+"/"+profilePhoto;
     }
 
     public RecruiterProfile(int userAccountId, Users userId, String city, String company, String country, String firstName, String lastName, String profilePhoto, String state) {
